@@ -1,0 +1,168 @@
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\ApplicationInsights.config
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\roslyn\csc.exe
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\roslyn\System.Collections.Immutable.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\roslyn\vbc.exe
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\roslyn\VBCSCompiler.exe
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\roslyn\VBCSCompiler.exe.config
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\ElectronicStore.dll.config
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\ElectronicStore.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\ElectronicStore.pdb
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Antlr3.Runtime.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\EntityFramework.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\EntityFramework.SqlServer.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.AI.Web.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.AI.WindowsServer.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.ApplicationInsights.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.Owin.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.Owin.Security.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.Owin.Security.Google.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.Web.Infrastructure.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Newtonsoft.Json.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Owin.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\System.Web.Helpers.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\System.Web.Mvc.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\System.Web.Optimization.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\System.Web.Razor.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\System.Web.WebPages.Deployment.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\System.Web.WebPages.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\System.Web.WebPages.Razor.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\WebGrease.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.AI.Web.xml
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.AI.WindowsServer.xml
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.ApplicationInsights.xml
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\System.Web.Helpers.xml
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\System.Web.Mvc.xml
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\System.Web.Optimization.xml
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\System.Web.Razor.xml
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\System.Web.WebPages.xml
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\System.Web.WebPages.Deployment.xml
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\System.Web.WebPages.Razor.xml
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Antlr3.Runtime.pdb
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Newtonsoft.Json.xml
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\EntityFramework.xml
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\EntityFramework.SqlServer.xml
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.Owin.xml
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.Owin.Security.xml
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.Owin.Security.Google.xml
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\obj\Debug\ElectronicStore.csprojResolveAssemblyReference.cache
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\obj\Debug\ElectronicStore.dll
+c:\users\nhtha_000\documents\visual studio 2015\Projects\Web2\ElectronicStore\obj\Debug\ElectronicStore.pdb
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\ApplicationInsights.config
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\roslyn\csc.exe
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\roslyn\vbc.exe
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\roslyn\VBCSCompiler.exe
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\ElectronicStore.dll.config
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\ElectronicStore.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\ElectronicStore.pdb
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Antlr3.Runtime.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\EntityFramework.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\EntityFramework.SqlServer.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.AI.Web.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.ApplicationInsights.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.Owin.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.Owin.Security.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Newtonsoft.Json.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Owin.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\System.Web.Helpers.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\System.Web.Mvc.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\System.Web.Optimization.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\System.Web.Razor.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\System.Web.WebPages.Deployment.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\System.Web.WebPages.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\System.Web.WebPages.Razor.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\WebGrease.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.AI.Web.xml
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.ApplicationInsights.xml
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\System.Web.Helpers.xml
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\System.Web.Mvc.xml
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\System.Web.Optimization.xml
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\System.Web.Razor.xml
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\System.Web.WebPages.xml
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\System.Web.WebPages.Deployment.xml
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\System.Web.WebPages.Razor.xml
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Antlr3.Runtime.pdb
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Newtonsoft.Json.xml
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\EntityFramework.xml
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\EntityFramework.SqlServer.xml
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.Owin.xml
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.Owin.Security.xml
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\obj\Debug\ElectronicStore.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\obj\Debug\ElectronicStore.pdb
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\PagedList.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\PagedList.Mvc.dll
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\PagedList.xml
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\bin\PagedList.Mvc.xml
+C:\Users\nhtha_000\OneDrive\Tài liệu\Web2\Web2\ElectronicStore\obj\Debug\ElectronicStore.csprojResolveAssemblyReference.cache

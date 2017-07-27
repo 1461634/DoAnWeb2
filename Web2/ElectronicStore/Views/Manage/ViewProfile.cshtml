@@ -1,0 +1,134 @@
+﻿@model ElectronicStoreConnection.AspNetUser
+@{
+    ViewBag.Title = "Your Profile";
+    var purchaseHistory = (IEnumerable<ElectronicStoreConnection.View_PurchaseHistory>)ViewBag.PurchaseHistory;
+    var orderHistory = (IEnumerable<ElectronicStoreConnection.Order>)ViewBag.OrderHistory;
+}
+<div class="panel-info">
+    <div class="panel-heading text-center">
+        <h3>View/Edit Profile</h3>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                @using (Html.BeginForm("EditProfile", "Manage", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.HiddenFor(m => m.Id)
+                    <h4>Infomation</h4>
+                    <hr />
+                    @Html.ValidationSummary("", new { @class = "text-danger" })
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.FirstName, new { @class = "col-md-2 control-label" })
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.LastName, new { @class = "col-md-2 control-label" })
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Address, new { @class = "col-md-2 control-label" })
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(m => m.Address, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.PhoneNumber, new { @class = "col-md-2 control-label" })
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" class="btn btn-default" value="Submit" />
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+    <div class="panel-footer">
+        <div class="top-brands">
+            <div class="container">
+                <h3>Purchase History</h3>
+                <div class="sliderfig">
+                    <ul id="flexiselDemo1">
+                        @foreach (var item in purchaseHistory)
+                        {
+                            <li>
+                                <a href="/Product/Details/@item.productId"><img src="@item.ImageUrl" title="@item.Name - Price: @item.Price" class="img-responsive" /></a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+                <script type="text/javascript">
+                    $(window).load(function () {
+                        $("#flexiselDemo1").flexisel({
+                            visibleItems: 3,
+                            animationSpeed: 1000,
+                            autoPlay: true,
+                            autoPlaySpeed: 3000,
+                            pauseOnHover: true,
+                            enableResponsiveBreakpoints: true,
+                            responsiveBreakpoints: {
+                                portrait: {
+                                    changePoint: 480,
+                                    visibleItems: 1
+
+                                },
+                                landscape: {
+                                    changePoint: 640,
+                                    visibleItems: 2
+
+                                },
+                                tablet: {
+                                    changePoint: 768,
+                                    visibleItems: 3
+
+                                }
+                            }
+                        });
+
+                    });
+                </script>
+                <script type="text/javascript" src="/Assets/Client/js/jquery.flexisel.js"></script>
+            </div>
+        </div>
+        <div class="top-brands">
+            <div class="container">
+                <h3>Order History</h3>
+                <table class="table table-hover table-responsive table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Date Order</th>
+                            <th>Subtotal</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in orderHistory)
+                        {
+                            <tr>
+                                <td>@item.OrderDate</td>
+                                <td>@item.Total</td>
+                                <td>@Html.Raw(item.Status == 1 ? "<span class=\"label label-default\">Waiting<span>" : item.Status == 0 ? "<span class=\"label label-info\">Delivering</span>" : "<span class=\"label label-success\">Delivered</span>")</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

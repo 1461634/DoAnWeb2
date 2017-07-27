@@ -1,0 +1,32 @@
+﻿@model PagedList.IPagedList<ElectronicStoreConnection.View_DayStatistic>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Sales Statistics By Day";
+}
+<div class="panel panel-success">
+    <div class="panel-heading">
+        @Html.PagedListPager(Model, page => Url.Action("DayStatistics", new { page = page }), PagedListRenderOptions.TwitterBootstrapPager)
+    </div>
+    <div class="panel-body">
+        <table class="table table-responsive table-hover table-striped">
+            <thead>
+                <tr>
+                    <th>
+                        Fiscal Day
+                    </th>
+                    <th>Revenue</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Day</td>
+                        <td>@item.Revenue</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+

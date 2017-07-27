@@ -1,0 +1,142 @@
+﻿
+@{
+    ViewBag.Title = "Categories";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section jsFooter{
+    <script src="/Assets/Admin/js/bootbox.min.js"></script>
+    <script src="/Assets/Admin/js/mustache.min.js"></script>
+    <script src="/Assets/Admin/js/jquery.twbsPagination.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="/Assets/Admin/js/adminCategory.js"></script>
+}
+<style>
+    .error{
+        color:red;
+    }
+</style>
+<div class="col-md-12">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="row">
+                <div class="col-md-2">
+                    <button id="btnAddNew" class="btn btn-outline btn-success">Create New</button>
+                </div>
+                <div class="col-md-3">
+                    <input type="text" class="form-control" id="txtNameS" placeholder="Type name" />
+                </div>
+                <div class="col-md-2">
+                    <select class="form-control" id="ddlStatusS">
+                        <option value="true">Active</option>
+                        <option value="false">Locked</option>
+                    </select>
+                </div>
+                <div class="col-md-5">
+                    <button class="btn btn-outline btn-primary" id="btnSearch">Search</button>
+                    <button class="btn btn-outline btn-default" id="btnReset">Reset</button>
+                </div>
+            </div>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-bordered table-hover table-striped table-responsive text-center">
+                        <thead>
+                            <tr class="text-primary bg-info">
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Status</th>
+                                <th></th>
+                                <th>#</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tblData"></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="pagination" class="pagination"></div>
+                    <script id="data-template" type="x-tmpl-mustache">
+                        <tr class="text-success">
+                            <td>{{Id}}</td>
+                            <td>{{Name}}</td>
+                            <td>{{{Status}}}</td>
+                            <td><button class="btn btn-success btn-sm btn-top10" data-id="{{Id}}">Top 10 Featured Products Of Category {{Name}}</button></td>
+                            <td>
+                                <button class="btn btn-primary btn-edit" data-id="{{Id}}">Edit</button>
+                            </td>
+                        </tr>
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalAddUpdate" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Add/Update Category</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form" id="frmSaveData">
+                    <div class="form-group">
+                        <label for="txtName">Name:</label>
+                        <input type="text" class="form-control" name="txtName" id="txtName">
+                        <input type="hidden" id="hidID" value="0" />
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" id="ckStatus">Active</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary" id="btnSave">Save</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalAddUpdate2" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Top 10 Featured Products</h4>
+            </div>
+            <div class="modal-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Image</th>
+                            <th>Quantity</th>
+                            <th>Sold</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tblData2"></tbody>
+                </table>
+                <script id="data-template2" type="x-tmpl-mustache">
+                    <tr>
+                        <td>{{ProductName}}</td>
+                        <td><img src="{{Image}}" width="50" height="50" /></td>
+                        <td>{{Quantity}}</td>
+                        <td>{{{Sold}}}</td>
+                    </tr>
+                </script>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

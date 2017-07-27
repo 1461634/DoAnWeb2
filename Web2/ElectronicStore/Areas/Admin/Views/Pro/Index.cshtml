@@ -1,0 +1,236 @@
+﻿
+@{
+    ViewBag.Title = "Products";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section jsFooter{
+    <script src="/Assets/Admin/js/bootbox.min.js"></script>
+    <script src="/Assets/Admin/js/mustache.min.js"></script>
+    <script src="/Assets/Admin/js/jquery.twbsPagination.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="/Assets/Admin/js/adminProduct.js"></script>
+}
+<style>
+    .error {
+        color: red;
+    }
+
+    .table th {
+        text-align: center;
+    }
+
+</style>
+<div class="col-md-12">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="row">
+                <div class="col-md-2">
+                    <button id="btnAddNew" class="btn btn-outline btn-success">Create New</button>
+                </div>
+                <div class="col-md-3">
+                    <input type="text" class="form-control" id="txtNameS" placeholder="Type name" />
+                </div>
+                <div class="col-md-2">
+                    <select class="form-control" id="ddlStatusS">
+                        <option value="true">Active</option>
+                        <option value="false">Locked</option>
+                    </select>
+                </div>
+                <div class="col-md-5">
+                    <button class="btn btn-outline btn-primary" id="btnSearch">Search</button>
+                    <button class="btn btn-outline btn-danger" id="btnReset">Reset</button>
+                    <button class="btn btn-warning btn-outline" id="Top10">Top 10 BEST selling products</button>
+                </div>
+            </div>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-bordered table-hover table-striped table-responsive text-center">
+                        <thead>
+                            <tr class="text-primary bg-info">
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Image</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Sold</th>
+                                <th>Viewed</th>
+                                <th>Status</th>
+                                <th>#</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tblData"></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="pagination" class="pagination"></div>
+                    <script id="data-template" type="x-tmpl-mustache">
+                        <tr class="text-success">
+                            <td>{{Id}}</td>
+                            <td>{{Name}}</td>
+                            <td><img src="{{Image}}" class="img-thumbnail" width="100" height="100" /></td>
+                            <td>{{Price}}</td>
+                            <td>{{Quantity}}</td>
+                            <td>{{Sold}}</td>
+                            <td>{{Viewed}}</td>
+                            <td><a href="#" data-id="{{Id}}" class="status">{{{Status}}}</a></td>
+                            <td>
+                                <button class="btn btn-info btn-outline btn-edit" data-id="{{Id}}">Edit</button>
+                                <button class="btn btn-link btn-image" data-id="{{Id}}">More Images</button>
+                            </td>
+                        </tr>
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalAddUpdate" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Add/Update Category</h4>
+            </div>
+            <div class="modal-body">
+                
+                <form role="form" enctype="multipart/form-data" id="frmSaveData">
+                    <label>Choose Image(s):</label>
+                    <input type="file" id="File1" multiple />
+                    <input type="hidden" name="image" id="image" />
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" name="name" value="test" autofocus id="name" autocomplete="on" required="">
+                        <input type="hidden" id="id" value="0" />
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Category:</label>
+                        <select class="form-control" name="category" id="category"></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="brand">Brand:</label>
+                        <select class="form-control" name="brand" id="brand"></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="type">Type:</label>
+                        <select class="form-control" name="type" id="type"></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Price:</label>
+                        <input type="number" min="0" max="99999" value="100" autocomplete="on" class="form-control" name="price" id="price" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Quantity ($):</label>
+                        <input type="number" min="1" value="20" autocomplete="on" class="form-control" name="quantity" id="quantity" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="warranty">Warranty (months):</label>
+                        <input type="number" class="form-control" min="12" autocomplete="on" value="12" name="warranty" id="warranty"  required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description:</label>
+                        <textarea class="form-control" name="description" autocomplete="on" id="description" required="">pppppp</textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary" id="btnSave">Save</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Top 10 Featured Products-->
+<div class="modal fade" id="modalTop10" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Top 10 Featured Products</h4>
+            </div>
+            <div class="modal-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Image</th>
+                            <th>Quantity</th>
+                            <th>Sold</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tblData2"></tbody>
+                </table>
+                <script id="data-template2" type="x-tmpl-mustache">
+                    <tr>
+                        <td>{{Name2}}</td>
+                        <td><img src="{{Image2}}" width="50" height="50" /></td>
+                        <td>{{Quantity2}}</td>
+                        <td>{{{Sold2}}}</td>
+                    </tr>
+                </script>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalImage" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Add/Update Images</h4>
+            </div>
+            <div class="modal-body">
+                
+                <form role="form" enctype="multipart/form-data" id="frmSaveData">
+                    <label>Choose Image(s):</label>
+                    <input type="file" id="File1" multiple />
+                    <input type="hidden" data-id="{{ImageProductId}}" id="proId" />
+                </form>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <select class="form-control" id="imgStatus">
+                            <option value="true">Active</option>
+                            <option value="false">Locked</option>
+                        </select>
+                    </div>
+                </div>
+                <table class="table text-center">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Image</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tblData3"></tbody>
+                </table>
+                <script id="data-template3" type="x-tmpl-mustache">
+                    <tr>
+                        <td>{{Id3}}</td>
+                        <td><img src="{{Image3}}" class="img-thumbnail" width="50" height="50" /></td>
+                        <td><a href="#" class="imageStatus" data-id="{{Id3}}">{{{Status3}}}</a></td>
+                    </tr>
+                </script>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary" data-id="{{ImageProductId}}" id="btnSave">Save</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

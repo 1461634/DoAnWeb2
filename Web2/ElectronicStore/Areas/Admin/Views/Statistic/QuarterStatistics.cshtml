@@ -1,0 +1,34 @@
+﻿@model PagedList.IPagedList<ElectronicStoreConnection.View_ThreeMonthsStatistic>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Sales Statistics By Quarter";
+}
+<div class="panel panel-success">
+    <div class="panel-heading">
+        @Html.PagedListPager(Model, page => Url.Action("DayStatistics", new { page = page }), PagedListRenderOptions.PageNumbersOnly)
+    </div>
+    <div class="panel-body">
+        <table class="table table-responsive table-hover table-striped">
+            <thead>
+                <tr>
+                    <th>
+                        Fiscal Year
+                    </th>
+                    <th>Fiscal Quarter</th>
+                    <th>Revenue</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.FiscalYear</td>
+                        <td>@item.FiscalQuarter</td>
+                        <td>@item.Revenue</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+

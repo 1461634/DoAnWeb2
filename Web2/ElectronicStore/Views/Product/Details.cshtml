@@ -1,0 +1,193 @@
+﻿@model ElectronicStoreConnection.Product
+@{
+    ViewBag.Title = "Details";
+    var Images = (IEnumerable<ElectronicStoreConnection.Image>)ViewBag.Images;
+}
+
+<!-- single -->
+<div class="single">
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.9&appId=1894120417507630";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="container">
+        <div class="col-md-4 single-left">
+            <div class="flexslider">
+                <ul class="slides">
+                    @if (Images.Count() == 0)
+                    {
+                        <li data-thumb="@Model.ImageUrl">
+                            <div class="thumb-image"> <img src="@Model.ImageUrl" data-imagezoom="true" class="img-responsive" alt=""> </div>
+                        </li>
+                    }
+
+                    @foreach (var image in Images)
+                    {
+                        <li data-thumb="@image.ImageUrl">
+                            <div class="thumb-image"> <img src="@image.ImageUrl" data-imagezoom="true" class="img-responsive" alt=""> </div>
+                        </li>
+                    }
+                </ul>
+            </div>
+            <!-- flexslider -->
+            <script defer src="/Assets/Client/js/jquery.flexslider.js"></script>
+            <link rel="stylesheet" href="/Assets/Client/css/flexslider.css" type="text/css" media="screen" />
+            <script>
+                // Can also be used with $(document).ready()
+                $(window).load(function () {
+                    $('.flexslider').flexslider({
+                        animation: "slide",
+                        controlNav: "thumbnails"
+                    });
+                });
+            </script>
+            <!-- flexslider -->
+            <!-- zooming-effect -->
+            <script src="/Assets/Client/js/imagezoom.js"></script>
+            <!-- //zooming-effect -->
+        </div>
+        <div class="col-md-8 single-right">
+            <h3 class="text-uppercase">@Model.Name</h3>
+            <div class="rating1">
+                <span class="starRating">
+                    <input id="rating5" type="radio" name="rating" value="5">
+                    <label for="rating5">5</label>
+                    <input id="rating4" type="radio" name="rating" value="4">
+                    <label for="rating4">4</label>
+                    <input id="rating3" type="radio" name="rating" value="3" checked>
+                    <label for="rating3">3</label>
+                    <input id="rating2" type="radio" name="rating" value="2">
+                    <label for="rating2">2</label>
+                    <input id="rating1" type="radio" name="rating" value="1">
+                    <label for="rating1">1</label>
+                </span>
+            </div>
+            <div class="description">
+                <h5><i>Description</i></h5>
+                <p>@Model.Description</p>
+            </div>
+            <div class="color-quality">
+                <div class="color-quality-left">
+                    <h5>Viewed : @Model.Viewed</h5>
+                </div>
+                <div class="color-quality-right">
+                    <h5>Quantity : @Model.Quantity</h5>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="simpleCart_shelfItem">
+                <p><span><i class="fa fa-usd" aria-hidden="true"></i>@((int)(Model.Price * 1.3))</span> <i class="item_price"><i class="fa fa-usd" aria-hidden="true"></i>@Model.Price</i></p>
+                @using (Html.BeginForm("AddItem", "Cart", new { productId = Model.Id, quantity = 1 }))
+                {
+                    <button type="submit" class="w3ls-cart">Add to cart</button>
+                }
+            </div> 
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<div class="additional_info">
+    <div class="container">
+        <div class="sap_tabs">
+            <div id="horizontalTab1" style="display: block; width: 100%; margin: 0px;">
+                <ul>
+                    <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Reviews</span></li>
+                </ul>
+                <div class="tab-2 resp-tab-content additional_info_grid" aria-labelledby="tab_item-1">
+                    @if (ElectronicStore.Helper.InternetConnection.isConnected())
+                    {
+                        <div class="fb-comments" data-href="http://localhost:49844/Product/Details/@Model.Id" data-numposts="1"></div>
+                    }
+                    else
+                    {
+                        @Html.Action("Index", "Comment", new { id = Model.Id })
+                    }
+                    
+                </div>
+            </div>
+        </div>
+        <script src="/Assets/Client/js/easyResponsiveTabs.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#horizontalTab1').easyResponsiveTabs({
+                    type: 'default', //Types: default, vertical, accordion
+                    width: 'auto', //auto or any width like 600px
+                    fit: true   // 100% fit in a container
+                });
+            });
+        </script>
+    </div>
+</div>
+<!-- Related Products -->
+<div class="w3l_related_products">
+    <div class="container">
+        <h3>Related Products</h3>
+        <ul id="flexiselDemo2">
+            <li>
+                <div class="w3l_related_products_grid">
+                    <div class="agile_ecommerce_tab_left mobiles_grid">
+                        <div class="hs-wrapper hs-wrapper3">
+                            <img src="/Assets/Client/images/34.jpg" alt="" class="img-responsive" />
+                            <img src="/Assets/Client/images/35.jpg" alt="" class="img-responsive" />
+                            <img src="/Assets/Client/images/27.jpg" alt="" class="img-responsive" />
+                            <img src="/Assets/Client/images/28.jpg" alt="" class="img-responsive" />
+                            <img src="/Assets/Client/images/37.jpg" alt="" class="img-responsive" />
+                            <div class="w3_hs_bottom">
+                                <div class="flex_ecommerce">
+                                    <a href="#" data-toggle="modal" data-target="#myModal6"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <h5><a href="single.html">Kid's Toy</a></h5>
+                        <div class="simpleCart_shelfItem">
+                            <p class="flexisel_ecommerce_cart"><span>$150</span> <i class="item_price">$100</i></p>
+                            <form action="#" method="post">
+                                <input type="hidden" name="cmd" value="_cart">
+                                <input type="hidden" name="add" value="1">
+                                <input type="hidden" name="w3ls_item" value="Kid's Toy">
+                                <input type="hidden" name="amount" value="100.00">
+                                <button type="submit" class="w3ls-cart">Add to cart</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <script type="text/javascript">
+            $(window).load(function () {
+                $("#flexiselDemo2").flexisel({
+                    visibleItems: 4,
+                    animationSpeed: 1000,
+                    autoPlay: true,
+                    autoPlaySpeed: 3000,
+                    pauseOnHover: true,
+                    enableResponsiveBreakpoints: true,
+                    responsiveBreakpoints: {
+                        portrait: {
+                            changePoint: 568,
+                            visibleItems: 1
+                        },
+                        landscape: {
+                            changePoint: 667,
+                            visibleItems: 2
+                        },
+                        tablet: {
+                            changePoint: 768,
+                            visibleItems: 3
+                        }
+                    }
+                });
+
+            });
+        </script>
+        <script type="text/javascript" src="/Assets/Client/js/jquery.flexisel.js"></script>
+    </div>
+</div>
+<!-- //Related Products -->

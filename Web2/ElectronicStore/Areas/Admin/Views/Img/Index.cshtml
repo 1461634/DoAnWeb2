@@ -1,0 +1,97 @@
+﻿
+@{
+    ViewBag.Title = "Product Images";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section jsFooter{
+    <script src="/Assets/Admin/js/bootbox.min.js"></script>
+    <script src="/Assets/Admin/js/mustache.min.js"></script>
+    <script src="/Assets/Admin/js/jquery.twbsPagination.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="/Assets/Admin/js/adminImage.js"></script>
+}
+
+<div class="col-md-12">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="row">
+                <div class="col-md-2">
+                    <button id="btnAddNew" data-id="@ViewBag.ProId" class="btn btn-outline btn-success">Create New</button>
+                </div>
+                <div class="col-md-10">
+                    <select class="form-control" id="status">
+                        <option value="true">Active</option>
+                        <option value="false">Locked</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-bordered table-hover table-striped table-responsive text-center">
+                        <thead>
+                            <tr class="text-primary bg-info">
+                                <th>Id</th>
+                                <th>Product Id</th>
+                                <th>Name</th>
+                                <th>Status</th>
+                                <th>#</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tblData"></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="pagination" class="pagination"></div>
+                    <script id="data-template" type="x-tmpl-mustache">
+                        <tr class="text-success">
+                            <td>{{Id}}</td>
+                            <td>{{ProId}}</td>
+                            <td>{{Name}}</td>
+                            <td><a href="#" data-id="{{Id}}" class="status">{{{Status}}}</a></td>
+                            <td>
+                                <button class="btn btn-primary btn-edit" data-id="{{Id}}">Edit</button>
+                            </td>
+                        </tr>
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalAddUpdate" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Add/Update Image</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <form role="form" class="form-horizontal" id="frmSaveData" enctype="multipart/form-data">
+                            <input type="hidden" name="imgId" id="imgId" value="0" />
+                            Choos Image(s): <input type="file" id="imgUrl" multiple required>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <img class="img-responsive" id="image" src="" />
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary" data-id="{{proId}}" id="btnSave">Save</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
