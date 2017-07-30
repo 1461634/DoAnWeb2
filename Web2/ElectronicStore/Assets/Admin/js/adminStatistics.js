@@ -1,4 +1,4 @@
-ï»¿//config 
+﻿//config 
 var config = {
     pageSize: 3,
     pageIndex: 1
@@ -17,6 +17,7 @@ var statistics = {
 
     //convert date
     convertedDate: function (strDate) {
+        var dateString = strDate.substr(6, 13);
         var currentTime = new Date(parseInt(dateString));
         var month = currentTime.getMonth() + 1;
         var day = currentTime.getDate();
