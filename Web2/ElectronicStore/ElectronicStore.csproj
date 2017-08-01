@@ -528,6 +528,7 @@
     <Folder Include="Assets\Admin\vendor\tether\" />
     <Folder Include="Assets\Client\fonts\" />
     <Folder Include="Data\Images\" />
+    <Folder Include="picture\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
