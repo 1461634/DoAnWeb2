@@ -15,7 +15,7 @@ namespace ElectronicStore.Controllers
     public class CartController : Controller
     {
         private const string CartSession = "CartSession";
-        
+
         // GET: Cart
         public ActionResult Index()
         {
@@ -27,7 +27,7 @@ namespace ElectronicStore.Controllers
             }
             return View(list);
         }
-        
+
         //POST: Delete all products from cart
         public JsonResult DeleteAll()
         {
@@ -37,7 +37,7 @@ namespace ElectronicStore.Controllers
                 status = true
             });
         }
-        
+
         //POST: Delete each product from cart
         public JsonResult Delete(int id)
         {
@@ -49,7 +49,7 @@ namespace ElectronicStore.Controllers
                 status = true
             });
         }
-        
+
         //Update quantity of each product
         public JsonResult Update(string cartModel)
         {
@@ -166,7 +166,7 @@ namespace ElectronicStore.Controllers
 
                     return Redirect("/Cart/Finish");
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     return View(ex.Message);
                 }
