@@ -213,6 +213,7 @@
     <Compile Include="Areas\Admin\Controllers\UserController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CartController.cs" />
+    <Compile Include="Controllers\CommentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
@@ -224,6 +225,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Bus\BrandBus.cs" />
     <Compile Include="Models\Bus\CategoryBus.cs" />
+    <Compile Include="Models\Bus\CommentBus.cs" />
     <Compile Include="Models\Bus\ImageBus.cs" />
     <Compile Include="Models\Bus\OrderBus.cs" />
     <Compile Include="Models\Bus\OrderDetailBus.cs" />
@@ -516,6 +518,7 @@
     <Content Include="Views\Cart\Index.cshtml" />
     <Content Include="Views\Cart\Payment.cshtml" />
     <Content Include="Views\Cart\Finish.cshtml" />
+    <Content Include="Views\Comment\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -526,7 +529,6 @@
     <Folder Include="Assets\Client\fonts\" />
     <Folder Include="Data\Images\" />
     <Folder Include="picture\" />
-    <Folder Include="Views\Comment\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
